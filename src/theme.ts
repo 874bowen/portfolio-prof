@@ -1,8 +1,14 @@
 // theme.ts
 
 // 1. import `extendTheme` function
-import { extendTheme, type StyleFunctionProps } from '@chakra-ui/react'
+import { extendTheme, type StyleFunctionProps, theme as chakraTheme } from '@chakra-ui/react'
 import { mode } from '@chakra-ui/theme-tools'
+
+const fonts = {
+  ...chakraTheme.fonts,
+  body: `Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol"`,
+  heading: `Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol"`
+}
 
 const styles = {
    global: (props: StyleFunctionProps) => ({
@@ -25,6 +31,6 @@ const styles = {
  };
 // 3. extend the theme
 
-const theme = extendTheme({ components, styles })
+const theme = extendTheme({ components, styles, fonts })
 
 export default theme

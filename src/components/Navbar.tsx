@@ -14,19 +14,12 @@ const Navbar = ({ colorMode, toggleColorMode }: any) => {
 				<div className="nav__page-links">
 					<Link>Projects</Link>
 					<Link>Contact</Link>
-					<div
-						className={
-							colorMode === "light" ? "toggle__light-div" : "toggle__dark-div"
-						}
-						onClick={toggleColorMode}
-					>
-						<div
-							className={
-								colorMode === "light"
-									? "toggle__light-circle"
-									: "toggle__dark-circle"
-							}
-						></div>
+					<div onClick={toggleColorMode}>
+						{colorMode === "light" ? (
+							<i className="fa-solid fa-moon"></i>
+						) : (
+							<i className="fa-solid fa-sun"></i>
+						)}
 					</div>
 				</div>
 			</div>

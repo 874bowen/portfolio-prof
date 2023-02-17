@@ -34,12 +34,12 @@ body {
 .nav {
    display: flex;
    justify-content: flex-end;
-   margin: 0 1.5rem;
 }
 
 .nav__div {
    height: 80px;
-   width: 70%;
+   padding: 0 1.5rem;
+   width: 100%;
    display: flex;
    justify-content: space-between;
    align-items: center;
@@ -50,7 +50,7 @@ body {
    font-size: 1.75rem;
    display: flex;
    flex-flow: row;
-   gap: 1rem;
+   gap: 2rem;
 }
 
 .nav__page-links {
@@ -60,13 +60,30 @@ body {
    align-items: center;
 }
 
+.landing__image-div {
+   height: 80vh;
+   display: flex;
+   flex-flow: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.landing__image {
+   max-width: 40%;
+   border-radius: 50%;
+   margin-bottom: 0.5rem;
+}
+
+caption {
+   margin-bottom: 2rem;
+}
 @media screen and (max-width: 576px) {
    .nav__div {
       width: 100%;
       gap: 1rem;
    }
    
-   .nav__page-links {
+   .nav__page-links, .nav__social-links {
       gap: 0.5rem;
    }
 }

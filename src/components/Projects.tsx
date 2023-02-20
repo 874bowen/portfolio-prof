@@ -1,19 +1,8 @@
 import React from "react";
-import { Box, Heading, SimpleGrid } from "@chakra-ui/react";
+import { Box, Heading } from "@chakra-ui/react";
 import { PROJECTS } from "../assets/data/projects";
 import Project from "./Project";
-import { motion } from "framer-motion";
 
-type Project = {
-	id: Number;
-	title: String;
-	subtitle: String;
-	image: String;
-	category: String;
-	link: String;
-	github: String;
-	description: String;
-};
 
 const Projects = () => {
 	const projects = PROJECTS.map((project, i) => {

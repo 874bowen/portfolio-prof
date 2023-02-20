@@ -1,6 +1,3 @@
-import bt from "../bts2.png" 
-
-
 type Project = {
    id: Number
    title: String

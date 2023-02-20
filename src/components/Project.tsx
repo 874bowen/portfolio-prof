@@ -1,5 +1,4 @@
 import React from "react";
-import bts from "../assets/bts2.png";
 import {
 	Card,
 	CardBody,
@@ -13,17 +12,6 @@ import {
 	Button,
 	Link,
 } from "@chakra-ui/react";
-
-type Proj = {
-	id: Number;
-	title: String;
-	subtitle: String;
-	image: String;
-	category: String;
-	link: String;
-	github: String;
-	description: String;
-};
 
 const Project = ({ project }: any) => {
 	console.log();

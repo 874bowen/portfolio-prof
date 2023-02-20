@@ -34,6 +34,7 @@ body {
 .nav {
    display: flex;
    justify-content: flex-end;
+   
 }
 
 .nav__div {
@@ -44,6 +45,8 @@ body {
    justify-content: space-between;
    align-items: center;
    gap: 5rem;
+   position: fixed;
+   top: 0;
 }
 
 .nav__social-links {

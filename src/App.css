@@ -47,6 +47,7 @@ body {
    gap: 5rem;
    position: fixed;
    top: 0;
+   z-index: 2;
 }
 
 .nav__social-links {
@@ -64,7 +65,7 @@ body {
 }
 
 .landing__image-div {
-   height: 80vh;
+   height: 100vh;
    display: flex;
    flex-flow: column;
    justify-content: center;
@@ -80,6 +81,7 @@ body {
 caption {
    margin-bottom: 2rem;
 }
+
 @media screen and (max-width: 576px) {
    .nav__div {
       width: 100%;

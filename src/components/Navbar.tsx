@@ -3,7 +3,14 @@ import React from "react";
 
 const Navbar = ({ colorMode, toggleColorMode }: any) => {
 	return (
-		<nav className="nav">
+		<nav
+			className="nav"
+			style={
+				colorMode === "dark"
+					? { backgroundColor: "#04090f" }
+					: { backgroundColor: "#959594" }
+			}
+		>
 			<div className="nav__div">
 				<div className="nav__social-links">
 					<i className="fa-brands fa-linkedin"></i>

@@ -24,6 +24,7 @@ const Project = ({ project }: any) => {
 					alt="Green double couch with wooden legs"
 					borderRadius="lg"
 					className="img"
+					width="100%"
 				/>
 				<Stack mt="6" spacing="3">
 					<Heading size="md">{project.title}</Heading>

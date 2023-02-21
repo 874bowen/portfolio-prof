@@ -6,19 +6,17 @@ import Project from "./Project";
 
 const Projects = () => {
 	const projects = PROJECTS.map((project, i) => {
-		console.log(project);
-
 		return <Project project={project} />;
 	});
 	return (
 		<div className="projects">
-			<Heading as="h3" size="xl" noOfLines={1}>
+			<Heading as="h3" marginLeft={{base: "1rem", md: "5rem"}} marginBottom={5} size="xl" noOfLines={1}>
 				Projects
 			</Heading>
 			<Box
 				display="grid"
 				width={{ md: "80%" }}
-				placeItems="center"
+				justifyContent="center"
 				gridTemplateColumns={{ md: "repeat(2, minmax(0, 1fr))" }}
 				gridGap={8}
 				marginX="auto"

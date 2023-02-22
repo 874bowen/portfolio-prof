@@ -82,13 +82,28 @@ caption {
    margin-bottom: 2rem;
 }
 
+.contact__form{
+   width: 100%;
+   display: grid;
+   place-items: center;
+}
+
+.contact__form-field{
+   width: 60%;
+}
+
 @media screen and (max-width: 576px) {
    .nav__div {
       width: 100%;
       gap: 1rem;
    }
-   
+   .fa-twitter {
+      display: none;
+   }
    .nav__page-links, .nav__social-links {
       gap: 0.5rem;
+   }
+   .contact__form-field{
+      width: 90%;
    }
 }

@@ -9,7 +9,7 @@ const Projects = () => {
 		return <Project project={project} />;
 	});
 	return (
-		<div className="projects">
+		<div className="projects" id="projects">
 			<Heading as="h3" marginLeft={{base: "1rem", md: "5rem"}} marginBottom={5} size="xl" noOfLines={1}>
 				Projects
 			</Heading>
